@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Appel vidéo privé</title>
+  <style>
+    video {
+      width: 45%;
+      border-radius: 1rem;
+      margin: 1rem;
+      background: black;
+    }
+  </style>
+</head>
+<button id="startCall">📞 Appeler</button>
+<body>
+  <h1>Appel vidéo entre toi et ta copine ❤️</h1>
+  <video id="localVideo" autoplay muted></video>
+  <video id="remoteVideo" autoplay></video>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
