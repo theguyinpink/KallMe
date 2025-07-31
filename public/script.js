@@ -1,4 +1,11 @@
+// 👉 Option 1 : automatique (dev + production)
 const socket = io();
+
+// 👉 Option 2 si ça bug sur Render :
+/*
+const socket = io("https://kallme.onrender.com");
+*/
+
 const localVideo = document.getElementById("localVideo");
 const remoteVideo = document.getElementById("remoteVideo");
 const callBtn = document.getElementById("startCall");
